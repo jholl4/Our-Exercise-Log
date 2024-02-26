@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Exercise Log</title>
+
+    <style>
+        table, td, tr, th  {
+            border: black solid 1px;
+            border-collapse: collapse;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Our Exercise Log</h1>
+    </header>
+
+    <p>
+        Welcome to Our Exercise Log! As you complete each excercise in your routine, use the form here to add it to your log. This will allow you to look back and see how much you've improved. Don't forget to enter your name so that you can compare stats for some healthy competition!
+    </p>
+
+    <form action="localhost:8080/workouts" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text">
+        </div>
+        <div>
+            <label for="exercise">Exercise:</label>
+            <select id="exercise" name="exercise">
+                <option></option>
+                <option value="1">Incline Dumbell Bench</option>
+                <option value="2">Chest supported Dumbell Row</option>
+                <option value="3">Flat Dumbell Fly</option>
+            </select>
+        </div>
+        <div>
+            <label for="weight">Weight:</label>
+            <input id="weight" name="weight" type="number" placeholder="0">
+        </div>
+        <div>
+            <label for="reps">Reps:</label>
+            <input id="reps" name="reps" type="number">
+        </div>
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+
+    <p><h3>Current Day's Results</h3></p>
+
+    <table>
+        <thead>
+            <tr><th colspan="4">Incline Dumbell Bench</th></tr>
+        </thead>
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Weight</th>
+                <th scope="col">Reps</th>
+                <th scope="col">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Josh</td><td>35</td><td>5</td><td>20240226</td></tr>
+            <tr><td>Bailey</td><td>20</td><td>10</td><td>20240226</td></tr>
+            <tr><td>Flynn</td><td>5</td><td>10</td><td>20240226</td></tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr><th colspan="4">Chest Supp Dumbell Row</th></tr>
+        </thead>
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Weight</th>
+                <th scope="col">Reps</th>
+                <th scope="col">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Josh</td><td>35</td><td>10</td><td>20240226</td></tr>
+            <tr><td>Bailey</td><td>20</td><td>10</td><td>20240226</td></tr>
+            <tr><td>Flynn</td><td>5</td><td>10</td><td>20240226</td></tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr><th colspan="4">Flat Dumbell Fly</th></tr>
+        </thead>
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Weight</th>
+                <th scope="col">Reps</th>
+                <th scope="col">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Josh</td><td>20</td><td>10</td><td>20240226</td></tr>
+            <tr><td>Bailey</td><td>15</td><td>10</td><td>20240226</td></tr>
+            <tr><td>Flynn</td><td>5</td><td>10</td><td>20240226</td></tr>
+        </tbody>
+    </table>
+
+    <footer>
+        <h3>Don't forget to stretch after!</h3>
+    </footer>
+    
+</body>
+</html>
