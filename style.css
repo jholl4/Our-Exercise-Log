@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Varela Round';
+    src: url('..\font\VarelaRound-Regular.ttf');
+}
+
+body{
+    font-family: 'Varela Round', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #344e41;
+    color: #dad7cd;
+    width: auto;
+}
+
+* {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+input{
+    background-color: #31572c;
+    color: #dad7cd;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+select{
+    background-color: #31572c;
+    color: #dad7cd;
+    width: auto;
+}
+
+table, td, tr, th  {
+    border: #344e41 solid 1px;
+    color: white;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+tr:nth-child(even){
+    background-color: #589058;
+}
+
+tr:nth-child(odd){
+    background-color: #588157;
+}
+
+.tabletitle{
+    background-color: #31572c;
+    font-weight: bold;
+}
